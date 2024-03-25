@@ -77,7 +77,7 @@ input:active {
 
 button {
    border-radius: 5px;
-
+   width: 95%;
    padding: 10px;
    margin-top: 10px;
    background-color: #ff8c00;
@@ -103,8 +103,8 @@ button:active {
 
 #result {
    position: absolute;
-   top: calc(104%);
-   left: 0;
+   top: -10px;
+   left: 100%;
    color: rgb(246, 182, 93);
    /* Расположить блок под основным блоком с отступом 10px */
    /* Расположить блок под основным блоком с отступом 10px */
