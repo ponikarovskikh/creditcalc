@@ -9,21 +9,34 @@
 </head>
 
 <body>
-   <div class="calculator">
-      <h2>Кредитный калькулятор</h2>
+   <div class="container">
+      <div class="explanation">
+         <p class="explanation">Подсказка:
+         <p> Наведите на кнопку для пояснения </p>
+         </p>
 
-      <input type="number" id="loanAmount" placeholder="Сумма кредита">
 
-      <input type="number" id="interestRate" step="0.1" placeholder="Процентная ставка">
+      </div>
 
-      <input type="number" id="loanTerm" placeholder="Срок кредита">
+      <div class="calculator">
 
-      <button onclick="calculateAnnuity()">Рассчитать аннуитетный платеж</button>
-      <button onclick="calculateDifferentiated()">Рассчитать дифференцированный платеж</button>
-      <div id="result"></div>
+         <h2>Кредитный калькулятор</h2>
+         <div>
+            <input type="number" id="loanAmount" placeholder="Сумма кредита">
+         </div>
+         <div>
+            <input type="number" id="interestRate" placeholder="Процентная ставка">
+         </div>
+         <div>
+            <input type="number" id="loanTerm" placeholder="Срок кредита">
+         </div>
+
+         <button id="annuityButton" onclick="calculateAnnuity()">Рассчитать аннуитетный платеж</button>
+         <button id="differentiatedButton" onclick="calculateDifferentiated()">Рассчитать дифференцированный
+            платеж</button>
+         <div id="result" class="hidden"></div>
+      </div>
    </div>
 
    <script src="script.js"></script>
 </body>
-
-</html>

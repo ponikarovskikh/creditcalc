@@ -1,31 +1,76 @@
 /* styles.css */
-.calculator {
-   color: darkgoldenrod;
-   background-color: #fff;
-   max-width: 400px;
-   margin: 0 auto;
-   padding: 10px;
-   border: 1px solid #ccc;
-   border-radius: 10px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 body {
    background-color: rgba(232, 232, 232, 0.505)
+}
+
+.container {
+   display: flex;
+   width: fit-content;
+   flex-direction: row;
+   background-color: #fff;
+   border: 1px solid #ccc;
+   border-radius: 10px;
+   justify-content: center;
+
+}
+
+.explanation {
+   color: #f5411d;
+   width: 40%;
+   padding: 10px;
+   background: whitesmoke;
+   font-size: small;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   text-align: justify;
+}
+
+
+
+.calculator {
+   color: darkgoldenrod;
+   width: 50%;
+   margin: 0 auto;
+   padding: 10px;
+
+   position: relative;
+   /* Чтобы задать абсолютное позиционирование для блока result */
+
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   display: flexbox;
+}
+
+
+
+#chartContainer {
+   width: 100%;
+   height: 300px;
+   /* Настройте высоту по вашему усмотрению */
+}
+
+#chart {
+   width: 100%;
+   height: 100%;
 }
 
 input[type="number"] {
    width: 90%;
    height: 30px;
    padding: auto;
-   background-color: rgb(255, 255, 255);
+   border-radius: 2px;
+   background-color: rgb(242, 228, 206);
    margin: 10px;
    border: none;
-   border-bottom: 1px solid #6b6b6b;
+   border-bottom: 1px dotted #947434;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: medium;
+   outline: none;
+   color: burlywood;
+
 }
 
 input:active {
-   border: none;
+   outline: none;
+
 }
 
 button {
@@ -33,7 +78,7 @@ button {
    width: 95%;
    padding: 10px;
    margin-top: 10px;
-   background-color: #007bff;
+   background-color: #ce9652;
    color: #fff;
    border: none;
    border-radius: 5px;
@@ -41,16 +86,36 @@ button {
 }
 
 button:hover {
-   background-color: #0056b3;
+   background-color: #c54d25;
 }
 
 button:active {
-   background-color: #083565;
-   color: gold;
+   background-color: #c15513;
+   color: rgb(214, 198, 22);
 }
 
+.hidden {
+   display: none;
+   /* Скрыть элемент */
+}
 
 #result {
-   margin-top: 20px;
-   font-weight: bold;
+   position: absolute;
+   top: calc(104%);
+   left: 0;
+   color: rgb(246, 182, 93);
+   /* Расположить блок под основным блоком с отступом 10px */
+   /* Расположить блок под основным блоком с отступом 10px */
+   width: 90%;
+   margin: 10px;
+   /* Занимать всю доступную ширину */
+   background-color: #fff;
+   /* фон блока */
+   border: 1px solid #ccc;
+   /* рамка блока */
+   padding: 10px;
+   /* отступы внутри блока */
+   z-index: 1;
+   /* устанавливаем уровень слоя */
+   border-radius: 10px;
 }
