@@ -91,9 +91,7 @@ annuityButton.addEventListener('mouseover', () => {
    showAnnuityExplanation();
 });
 
-annuityButton.addEventListener('mouseout', () => {
-   hideExplanation();
-});
+
 
 
 
@@ -103,9 +101,6 @@ annuityButton.addEventListener('mouseout', () => {
 
 differentiatedButton.addEventListener('mouseover', () => {
    showdiffExplanation();
-});
-differentiatedButton.addEventListener('mouseout', () => {
-   hideExplanation();
 });
 
 

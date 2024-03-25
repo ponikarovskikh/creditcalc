@@ -11,11 +11,12 @@ body {
    border: 1px solid #ccc;
    border-radius: 10px;
    justify-content: center;
-
+   max-width: 500px;
+   max-top: 0 auto;
 }
 
 .explanation {
-   color: #f5411d;
+   color: #5d7426;
    width: 40%;
    padding: 10px;
    background: whitesmoke;
@@ -78,7 +79,7 @@ button {
    width: 95%;
    padding: 10px;
    margin-top: 10px;
-   background-color: #ce9652;
+   background-color: #ff8c00;
    color: #fff;
    border: none;
    border-radius: 5px;
@@ -86,12 +87,12 @@ button {
 }
 
 button:hover {
-   background-color: #c54d25;
+   background-color: #0056b3;
 }
 
 button:active {
-   background-color: #c15513;
-   color: rgb(214, 198, 22);
+   background-color: #083565;
+   color: gold;
 }
 
 .hidden {
